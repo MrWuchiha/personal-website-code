@@ -1,0 +1,39 @@
+@layer components {
+  .intro-container {
+    @apply h-screen w-screen;
+    @apply flex flex-col md:justify-end;
+    @apply px-16 py-16;
+    @apply sm:px-32;
+    @apply border-b-2 border-secondary;
+  }
+
+  .intro-div {
+    @apply relative;
+    @apply max-h-fit;
+    @apply flex flex-col;
+    @apply md:grid md:grid-rows-2 md:grid-cols-5;
+    @apply gap-8 lg:gap-16;
+  }
+
+  .projects-div {
+    @apply relative;
+    @apply w-screen;
+    @apply px-16;
+    @apply flex flex-col items-center justify-center;
+    @apply xl:grid xl:grid-cols-2;
+    @apply gap-8 lg:gap-16;
+  }
+
+  .project-tile-container {
+    @apply relative;
+    @apply justify-self-center;
+  }
+
+  .courses-div {
+    @apply relative;
+    @apply justify-center;
+    @apply px-16 pb-48;
+    @apply flex;
+    @apply gap-8 md:gap-16;
+  }
+}

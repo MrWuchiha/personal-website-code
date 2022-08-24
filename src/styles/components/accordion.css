@@ -1,0 +1,25 @@
+@layer components {
+  .accordion {
+    @apply grid grid-cols-3;
+    @apply justify-items-center;
+    @apply my-auto;
+  }
+  .accordion-expand-button {
+    @apply relative flex;
+    @apply py-3;
+    @apply text-secondary text-left border-0;
+    @apply hover:text-emphasis-one;
+  }
+
+  .accordion-icon {
+    @apply justify-center px-5;
+  }
+
+  .accordion-content {
+    @apply col-start-1 col-end-4;
+    @apply w-full;
+    @apply pt-3;
+    @apply justify-start justify-self-start;
+    @apply border-t-2 border-secondary;
+  }
+}

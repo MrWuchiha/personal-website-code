@@ -1,0 +1,61 @@
+html, body {
+  @apply h-full w-full bg-primary text-secondary m-0;
+  
+  font-family: 'Inter var', sans-serif;
+  @apply tracking-wide;
+  @apply text-xs lg:text-sm 2xl:text-lg;
+}
+
+
+@layer base {
+  ul {
+    list-style-type: disc;
+    @apply px-10;
+  }
+
+  a, a:link, a:visited {
+    @apply font-semibold;
+    @apply text-link-txt;
+    @apply hover:underline hover:text-link-hover_txt;
+    
+  }
+}
+
+
+@layer components {
+  .tile, .tile-two {
+    @apply relative;
+    @apply min-h-fit;
+    @apply px-4 py-8 md:px-8 md:py-12;
+    @apply inline-block overflow-auto shadow-lg;
+    @apply select-none;
+    @apply will-change-auto transition-opacity ease-out;
+  }
+
+  .tile {
+    @apply bg-gradient-to-b lg:bg-gradient-to-tr hover:bg-gradient-to-r;
+  }
+
+  .tile-two {
+    @apply bg-gradient-to-b lg:bg-gradient-to-r hover:bg-gradient-to-tr;
+    @apply will-change-transform;
+  }
+
+  .title {
+    @apply text-center text-3xl;
+    @apply my-20 py-4;
+  }
+
+  .icon {
+    @apply inline-block align-text-top;
+    @apply text-sm md:text-base;
+  }
+
+  .text-title {
+    @apply font-black;
+  }
+
+  .text-emphasis {
+    @apply font-black text-emphasis-one;
+  }
+}
