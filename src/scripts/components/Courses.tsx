@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import AccordionLayout from "./AccordionLayout";

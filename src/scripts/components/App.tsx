@@ -3,6 +3,7 @@ import Projects from './Projects';
 import Courses from './Courses';
 import Intro from './Intro';
 import Face from './Face';
+import React from 'react';
 
 function App() {
   return (

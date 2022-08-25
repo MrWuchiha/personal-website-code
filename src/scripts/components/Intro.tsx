@@ -1,3 +1,4 @@
+import React from "react";
 import { FaCaretRight, FaExternalLinkAlt } from "react-icons/fa";
 import { BrowserRouter } from "react-router-dom";
 import { HashLink as Link } from 'react-router-hash-link';
