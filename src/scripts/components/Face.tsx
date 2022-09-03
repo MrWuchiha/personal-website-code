@@ -1,8 +1,10 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import image1 from '../../assets/img7-face.png'
+import image2 from '../../assets/img8-face-sketch.png'
 
 export default function Face() {
-  let imgSrc = './src/assets/img7-face.png';
+  let imgSrc = image1;
   const [x, setX] = useState({});
 
   useEffect(
@@ -25,7 +27,7 @@ export default function Face() {
     <>
       <img 
         className='face-bg' 
-        src={x >= innerWidth/2 ? './src/assets/img8-face-sketch.png' : './src/assets/img7-face.png'}
+        src={x >= innerWidth/2 ? image2 : image1}
       />
     </>
   )

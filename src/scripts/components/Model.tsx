@@ -9,6 +9,7 @@ import { Html, useAnimations, useGLTF } from '@react-three/drei'
 import { GLTF } from 'three-stdlib'
 import { Color } from 'three'
 import { FaCaretRight } from 'react-icons/fa'
+import model from '../../assets/globe.glb?url'
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -35,7 +36,7 @@ type GLTFActions = Record<ActionName, THREE.AnimationAction>
 
 
 function Markup({...props}) {
-  const { nodes, materials } = useGLTF('/src/assets/globe.glb') as GLTFResult
+  const { nodes, materials } = useGLTF(model) as GLTFResult
   const [hovered, setHovered] = useState(false);
 
   function handleSetIndex(index:number) {
@@ -69,7 +70,7 @@ function Markup({...props}) {
 
 export default function Model(props: JSX.IntrinsicElements['group']) {
   const group = useRef<THREE.Group>()
-  const { nodes, materials, animations } = useGLTF('/src/assets/globe.glb') as GLTFResult
+  const { nodes, materials, animations } = useGLTF(model) as GLTFResult
   const { actions } = useAnimations(animations, group);
   const _scale = (innerWidth/innerHeight)*0.5;
   const [activeIndex, setActiveIndex] = useState(1);
@@ -127,6 +128,6 @@ export default function Model(props: JSX.IntrinsicElements['group']) {
   )
 }
 
-useGLTF.preload('/src/assets/globe.glb')
+useGLTF.preload(model)
 
 

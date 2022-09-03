@@ -2,6 +2,14 @@ import React from 'react';
 import { FaCaretRight } from 'react-icons/fa';
 import TileTwo from './TileTwo';
 
+// imports for vite webpack to recognize
+import img1 from '../../assets/img1-shflz.png';
+import img2 from '../../assets/img2-blender.png';
+import img3 from '../../assets/img3-chart.png';
+import img4 from '../../assets/img4-scanner.png';
+import img5 from '../../assets/img5-line.png';
+import img6 from '../../assets/img6-bar.png';
+
 function Text({ children }: {children:any}) {
   return (
     { children }
@@ -141,8 +149,8 @@ export default function Projects() {
           color="from-sky-500 to-cyan-200 hover:from-sky-400 hover:to-cyan-200"
         />
         <TileTwo 
-          front={<img src={'./src/assets/img1-shflz.png'}/>}
-          back={<img src={'./src/assets/img2-blender.png'}/>}
+          front={ <img src={img1} />}
+          back={ <img src={img2} />}
           color="from-cyan-200 to-blue-400 hover:from-blue-300 hover:to-cyan-200"
         />
 
@@ -152,8 +160,8 @@ export default function Projects() {
           color="from-rose-400 to-orange-100 hover:from-rose-500 hover:to-orange-100"
         />
         <TileTwo 
-          front={<img src={'./src/assets/img4-scanner.png'}/>}
-          back={<img src={'./src/assets/img3-chart.png'}/>}
+          front={ <img src={img4} />}
+          back={ <img src={img3} />}
           color="from-orange-100 to-red-400 hover:from-orange-100 hover:to-red-300"
         />
 
@@ -163,8 +171,8 @@ export default function Projects() {
           color="from-emerald-500 to-lime-200 hover:from-emerald-500 hover:to-lime-100"
         />
         <TileTwo 
-          front={<img src={'./src/assets/img5-line.png'}/>}
-          back={<img src={'./src/assets/img6-bar.png'}/>}
+          front={ <img src={img5} />}
+          back={ <img src={img6} />}
           color="from-lime-200 to-green-400 hover:from-lime-200 hover:to-green-300"
         />
         

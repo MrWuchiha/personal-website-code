@@ -17,7 +17,7 @@ export default function Intro() {
               Hi, I'm Edmund 👋. <br/>
               <span className='text-emphasis'>Welcome to my personal website.</span><br/>
               I am interested in data science and web3. <br/>
-              I am amateurishly obsessed with beautiful math proofs. <br/>
+              I am amateurishly obsessed with pure maths. <br/>
             </div>
           </Tile>
           <Tile 
