@@ -45,12 +45,12 @@ export default function Courses() {
 
             {(activeIndex === 1) && (
               <div className="accordion-content">
-                Comp202; Comp206; Comp250.
+                Comp202; Comp206; Comp250; Comp273; Comp302.
               </div>
             )}
             {(activeIndex === 2) && (
               <div className="accordion-content">
-                Math222; Math235; Math247; Math254; Math255.
+                Math222; Math235; Math247; Math254; Math255; Math356; Math454.
               </div>
             )}
             {(activeIndex === 3) && (
